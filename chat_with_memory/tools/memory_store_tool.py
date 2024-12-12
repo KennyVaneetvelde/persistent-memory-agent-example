@@ -1,6 +1,4 @@
-from typing import Optional
 from pydantic import Field
-import json
 
 from atomic_agents.lib.base.base_tool import BaseTool, BaseToolConfig
 from atomic_agents.lib.base.base_io_schema import BaseIOSchema
@@ -69,10 +67,8 @@ class MemoryStoreTool(BaseTool):
             "memory_type": memory_type,
         }
 
-        ids = self.db_service.add_documents(
+        self.db_service.add_documents(
             documents=[memory.content], metadatas=[metadata]
         )
 
-        stored_memory = memory.model_copy()
-
-        return MemoryStoreOutputSchema(memory=stored_memory)
+        return MemoryStoreOutputSchema(memory=memory.model_copy())
