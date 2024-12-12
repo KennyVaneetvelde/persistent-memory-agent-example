@@ -4,11 +4,6 @@ from datetime import datetime, timezone
 from atomic_agents.lib.base.base_io_schema import BaseIOSchema
 
 
-def datetime_to_str(dt: datetime) -> str:
-    """Convert datetime to ISO format string."""
-    return dt.isoformat()
-
-
 class BaseMemory(BaseIOSchema):
     """Base class for all memory types"""
 
