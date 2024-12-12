@@ -86,9 +86,8 @@ def print_memory(
     table.add_column("Value", style="green")
 
     # Print base properties
-    table.add_row("ID", str(memory.id))
     table.add_row("Content", memory.content)
-    table.add_row("Timestamp", memory.timestamp.isoformat())
+    table.add_row("Timestamp", memory.timestamp)
     table.add_row("Type", memory.__class__.__name__)
 
     # Add type-specific fields if they exist
