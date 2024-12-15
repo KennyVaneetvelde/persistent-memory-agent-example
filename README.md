@@ -2,6 +2,8 @@
 
 A Python-based CLI chat application that demonstrates advanced conversation capabilities with persistent memory. Built using the [Atomic Agents](https://github.com/BrainBlend-AI/atomic-agents) framework, this application showcases how to create intelligent agents that can remember previous interactions and form meaningful memories about conversations.
 
+**NOTE: This codebase is part of a tutorial article on integrating memory into your agents [check it out here](https://medium.com/generative-ai/build-smarter-ai-agents-with-long-term-persistent-memory-and-atomic-agents-415b1d2b23ff?sk=071d9e3b2f5a3e3adbf9fc4e8f4dbe27)**
+
 ## Features
 
 - 🧠 **Memory Formation**: Automatically forms and stores relevant memories from conversations using a dedicated Memory Formation Agent
